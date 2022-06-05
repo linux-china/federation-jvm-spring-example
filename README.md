@@ -42,3 +42,7 @@ query ExampleQuery {
 
 * [Netflix DGS Federation Example](https://github.com/Netflix/dgs-federation-example)
 * [GraphQL Java Kickstart Federation Example](https://github.com/setchy/graphql-java-kickstart-federation-example)
+       
+## References
+
+* Apollo Federation subgraph specification: https://www.apollographql.com/docs/federation/federation-spec/
