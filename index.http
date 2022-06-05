@@ -14,6 +14,22 @@ query ExampleQuery {
     }
 }
 
+### Query products over Gateway
+GRAPHQL http://localhost:4000/graphql
+
+query {
+    product(id: "2") {
+        id
+        name
+        description
+        reviews {
+            id
+            text
+            starRating
+        }
+    }
+}
+
 ### query book from products-subgraph
 GRAPHQL http://localhost:9080/graphql
 
@@ -21,4 +37,30 @@ query {
   product(id: "1") {
     name
   }
+}
+
+
+### query book from products-subgraph
+GRAPHQL http://localhost:9081/graphql
+
+query($representations:[_Any!]!){
+  _entities(representations:$representations){
+  ...on Product{reviews{id text starRating}}
+  }
+}
+
+{
+  "representations": [
+    {
+      "__typename": "Product",
+      "id": "2"
+    }
+  ]
+}
+
+### service metadata query from Federation server
+GRAPHQL http://localhost:9081/graphql
+
+query __ApolloGetServiceDefinition__ {
+   _service { sdl }
 }
