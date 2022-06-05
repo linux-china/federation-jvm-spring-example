@@ -29,3 +29,7 @@ npm run start
 ```
 
 Once the Gateway has started you can explore the example federated schema by opening Apollo Studio endpoint at http://localhost:4000.
+             
+### References
+
+* Apollo Federation: https://www.apollographql.com/docs/federation
