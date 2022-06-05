@@ -1,0 +1,15 @@
+### Query products over Gateway
+GRAPHQL http://localhost:4000/graphql
+
+query ExampleQuery {
+    products {
+        id
+        name
+        description
+        reviews {
+            id
+            text
+            starRating
+        }
+    }
+}
