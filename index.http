@@ -13,3 +13,12 @@ query ExampleQuery {
         }
     }
 }
+
+### query book from products-subgraph
+GRAPHQL http://localhost:9080/graphql
+
+query {
+  product(id: "1") {
+    name
+  }
+}
