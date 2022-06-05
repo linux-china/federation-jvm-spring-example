@@ -44,5 +44,7 @@ query ExampleQuery {
 * [GraphQL Java Kickstart Federation Example](https://github.com/setchy/graphql-java-kickstart-federation-example)
        
 ## References
-
+            
+* Apollo Federation: https://www.apollographql.com/docs/federation/
 * Apollo Federation subgraph specification: https://www.apollographql.com/docs/federation/federation-spec/
+* Apollo Federation on the JVM: https://github.com/apollographql/federation-jvm
