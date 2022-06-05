@@ -1,3 +1,4 @@
+# noinspection GraphQLTypeRedefinition
 type Product @key(fields: "id") @extends {
     id: ID! @external
     reviews: [Review!]!
