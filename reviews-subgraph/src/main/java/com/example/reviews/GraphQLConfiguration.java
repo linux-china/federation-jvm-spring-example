@@ -20,7 +20,7 @@ public class GraphQLConfiguration {
 
   @Bean
   public GraphQlSourceBuilderCustomizer federationTransform() {
-    DataFetcher entityDataFetcher = env -> {
+    DataFetcher<?> entityDataFetcher = env -> {
       List<Map<String, Object>> representations = env.getArgument(_Entity.argumentName);
       return representations.stream()
         .map(representation -> {
