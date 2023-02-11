@@ -48,3 +48,4 @@ query ExampleQuery {
 * Apollo Federation: https://www.apollographql.com/docs/federation/
 * Apollo Federation subgraph specification: https://www.apollographql.com/docs/federation/federation-spec/
 * Apollo Federation on the JVM: https://github.com/apollographql/federation-jvm
+* DGS framework together with Apollo Federation Server: https://github.com/Netflix/dgs-federation-example
