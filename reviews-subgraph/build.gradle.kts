@@ -1,6 +1,6 @@
 plugins {
-	id("org.springframework.boot") version "2.7.2"
-	id("io.spring.dependency-management") version "1.0.13.RELEASE"
+	id("org.springframework.boot") version "2.7.8"
+	id("io.spring.dependency-management") version "1.1.0"
 	java
 }
 
@@ -12,7 +12,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.apollographql.federation:federation-graphql-java-support:2.0.5")
+    implementation("com.apollographql.federation:federation-graphql-java-support:2.3.0")
     implementation("org.springframework.boot:spring-boot-starter-graphql")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
